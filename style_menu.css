@@ -1,0 +1,121 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+nav{
+	width: 100%;
+	background-color: #424558;
+}
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+nav li{
+	list-style-type: none;
+}
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+.sous_menu{
+	display: none;
+}
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+nav > ul > li > a{
+	padding: 30px 20px;
+	color: white;
+}
+nav > ul > li:hover > a{
+	padding: 26px 20px 30px 20px;
+	color: white;
+}
+nav li:hover .sous_menu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+.sous_menu li{
+	border-bottom: 2px solid yellow;
+}
+.sous_menu li a{
+	padding: 15px 30px;
+	font-size: 20px;
+	color: black;
+	width: 200px;
+	text-transform: capitalize;
+}
+nav ul > li{
+	text-transform: uppercase;
+}
+.menu_html:hover{
+	border-top: 4px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+}
+.menu_css:hover{
+	border-top: 4px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+}
+.menu_php:hover{
+	border-top: 4px solid #f1dc4f;
+	background-color: rgba(241, 211, 79, 0.15);
+}
+.menu_script:hover{
+	border-top: 4px solid #bbb;
+	background-color: rgba(220, 220, 220, 0.15);
+}
+.menu_html .sous_menu{
+	background-color: rgba(228, 77, 38, 0.80);
+}
+.menu_css .sous_menu{
+	background-color: rgba(000, 112, 192, 0.80);
+}
+.menu_php .sous_menu{
+	background-color: rgba(241, 211, 79, 0.80);
+}
+.menu_script .sous_menu{
+	background-color: rgba(220, 220, 220, 0.80);
+}
+.menu_html .sous_menu li:hover a{
+	background-color: rgb(228, 77, 38);
+	font-weight: bolder;
+	color: white;
+}
+.menu_css .sous_menu li:hover a{
+	background-color: rgb(000, 112, 192);
+	font-weight: bolder;
+	color: white;
+}
+ div .img_rond img {
+width: 600px;
+height: auto;
+-webkit-transition: .5s ease-in-out !important;
+transition : .5s ease-in-out !important;	
+}
+
+div .img_rond:hover img:hover{
+	width: 400px;
+	height: 400px;
+	border-radius: 50px;
+	background-color: #0caee0;
+}
+.menu_php .sous_menu li:hover a{
+	background-color: rgb(241, 211, 79);
+	font-weight: bolder;
+	color: white;
+}
+.menu_script .sous_menu li:hover a{
+	background-color: rgb(220, 220, 220);
+	font-weight: bolder;
+	color: white;
+}
